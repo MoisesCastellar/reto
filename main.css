@@ -1,0 +1,137 @@
+html {
+    margin: auto;
+    font-family: ;
+    background: #f8f6f2;
+    color: #333333;
+    text-align: justify;
+  }
+  
+  .logo {
+    width: 90px;
+    height: 90px;
+    //background: #1a444b;
+    background-image: url("https://pbs.twimg.com/profile_images/837760786466553856/ganu0Dms_400x400.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    //margin: auto;
+  }
+  
+  .header {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: #c7d6db;
+    color: #322737;
+    text-align: center;
+  }
+  .navbar {
+    position: relative;
+    text-align: left;
+
+  }
+  .container {
+    position: relative;
+    width: 960px;
+    top: 120px;
+    margin: 40px auto;
+    //background: #ffffff;
+  }
+  
+  .bookContainer {
+    vertical-align: top;
+    display: inline-block;
+    background: #ffffff;
+    width: 220px;
+    border-radius: 10px;
+    //border: 1px solid #333333;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .bookContainer:hover {
+    background: #77bad4;
+    color: #515151;
+  }
+  
+  .bookContainer a {
+    position: absolute;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    width: 60px;
+    height: 30px;
+    color: #2980b9;
+  }
+  
+  .bookImage {
+    width: 115px;
+    height: 242px;
+    //background: #1a444b;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 20px auto 15px;
+  }
+  
+  #img01 {
+    background-image: url("https://planetadelibrosco8.cdnstatics.com/usuaris/libros/fotos/288/tam_1/portada_las-noches-todas_tomas-gonzalez_201810121934.png" );
+  }
+  
+  #img02 {
+    background-image: url("https://planetadelibrosco8.cdnstatics.com/usuaris/libros/fotos/288/tam_1/portada_todo-por-la-patria_martin-caparros_201810251935.jpg");
+  }
+  
+  #img03 {
+    background-image: url("https://planetadelibrosco8.cdnstatics.com/usuaris/libros/fotos/288/tam_1/portada_volver-a-comer-del-arbol-de-la-ciencia_juan-cardenas_201810121944.jpg");
+  }
+  
+  #img04 {
+    background-image: url("https://planetadelibrosco4.cdnstatics.com/usuaris/libros/fotos/284/tam_1/portada_la-muerte-del-comendador-libro-1_haruki-murakami_201810050009.jpg");
+  }
+  
+  #img05 {
+    background-image: url("https://planetadelibrosco4.cdnstatics.com/usuaris/libros/fotos/284/tam_1/portada_sin-remedio_antonio-caballero_201810030048.jpg");
+  }
+  
+  #img06 {
+    background-image: url("https://planetadelibrosco4.cdnstatics.com/usuaris/libros/fotos/284/tam_1/283481_portada_brujas-literarias_taisia-kitaiskaia_201807170255.jpg");
+  }
+  #img07 {
+    background-image: url("https://planetadelibrosco4.cdnstatics.com/usuaris/libros/fotos/284/tam_1/portada_las-fiebres-de-la-memoria_gioconda-belli_201810050034.jpg");
+  }
+  #img08 {
+    background-image: url("https://planetadelibrosco4.cdnstatics.com/usuaris/libros/fotos/284/tam_1/portada_es-mejor-no-preguntar_sergio-ocampo-madrid_201810050032.jpg");
+  }
+  
+  
+  .bookTitle {
+    margin: 0;
+  }
+  
+  .ec-stars-wrapper {
+	  font-size: 0;
+	  display: inline-block;
+  }
+
+.ec-stars-wrapper a {
+    
+    text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 32px;
+	font-size: 2rem;
+	
+	color: #888;
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(39, 130, 228);
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: #888;
+}
