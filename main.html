@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+    <link href="https://file.myfontastic.com/nWGgrUUTaCJwrRJz9gJpRW/icons.css" rel="stylesheet">
+<head>
+  <title>Jobsity</title>
+</head>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .contenedor {
+    background:rgb(52, 17, 207);
+	  margin:auto;
+  }
+  .hiden-menu, .item-container-popover {
+    display: none;
+  }
+  
+  header {
+    background: #f5eff4;
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px ; 
+    padding: 10px;
+       
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+
+    //flex-direction: row;
+    //flex-wrap:wrap;
+    //justify-content:space-between;   
+  }
+
+  header .logo   {
+    color:#fff;
+    align-self: center;   
+	}
+  
+  header .titulo {  
+    align-self: center;
+  }
+  header .titulo a {
+    color: black;
+    text-decoration: none;
+    font-size: 3.0em;
+  }
+  header .inputIcon {
+    align-self: center;
+  }
+  header input[type="text"] {
+  width: 100%;
+  border: 2px solid #aaa;
+  border-radius: 15px;
+  margin: 8px 0;
+  outline: none;
+  padding: 8px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  
+}
+input[type="text"]:focus {
+  border-color: dodgerBlue;
+  box-shadow: 0 0 8px 0 dodgerBlue;
+}
+.inputIcon input[type="text"] {
+  padding-left: 40px;
+}
+.inputIcon {
+  position: relative;
+}
+.inputIcon i {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  padding: 9px 8px;
+  color: #aaa;
+  transition: 0.3s;
+}
+.inputIcon input[type="text"]:focus + i {
+  color: dodgerBlue;
+}
+
+ header .autor {
+    align-self: center;
+}
+header .autor .dropdown {
+  background: #f5eff4;
+  border: none;
+  font-size: 1.5em;
+}
+header .img-2 {
+  align-self: center;
+}
+header .img-2 img {
+  width: 50px;
+  height: 50px;
+  border-radius:150px;
+  border: 5px solid rgb(82, 123, 235,80);
+}
+.container-main {
+  background:seashell;
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.main-menu {
+  background: black;
+  width: 13%;
+  padding: 10px;
+  color: #fff;
+}
+.menu-1 {
+  margin:10px;
+
+}
+.menu-1 [class*="icon-"]:before {
+  position: relative;
+  top: 2px;
+  right: 5px;
+        
+} 
+
+.menu-1 li {
+  list-style: none;
+  display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+  
+}
+ .menu-1 li a {
+  color: rgb(83, 94, 243);
+  text-decoration: none;
+  
+  
+}
+
+.list-book {
+  background: #fff;
+  width: 74%;
+  height: 100%;
+  border: 1px rgb(170, 212, 253) solid;
+  padding: 10px;
+}
+.item-container {
+  vertical-align: top;
+  display: inline-block;
+  background: black;
+  width: 260px;
+  height: 435px;
+  margin: 50px;
+  margin-left: 10px;
+}
+.book-img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+.titulos {
+  margin: 5px;
+  padding: 10px;
+  //font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  //font-size: em;
+  
+}
+.book-img:hover { 
+  width: 260px;
+  height: 435px;
+  background: black;
+  opacity: .3 ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+.estadisticas {
+  background: black;
+  width: 13%;
+  padding: 10px;
+  color:#fff;
+  
+}
+
+/* -- imagenes -- */
+
+#img01{
+  background-image: url("https://planetadelibrosco8.cdnstatics.com/usuaris/libros/fotos/288/tam_1/portada_las-noches-todas_tomas-gonzalez_201810121934.png" );
+}
+
+  #img02 {
+    background-image: url("https://planetadelibrosco8.cdnstatics.com/usuaris/libros/fotos/288/tam_1/portada_todo-por-la-patria_martin-caparros_201810251935.jpg");
+  }
+  
+  #img03 {
+    background-image: url("https://planetadelibrosco8.cdnstatics.com/usuaris/libros/fotos/288/tam_1/portada_volver-a-comer-del-arbol-de-la-ciencia_juan-cardenas_201810121944.jpg");
+  }
+  
+  #img04 {
+    background-image: url("https://planetadelibrosco4.cdnstatics.com/usuaris/libros/fotos/284/tam_1/portada_la-muerte-del-comendador-libro-1_haruki-murakami_201810050009.jpg");
+  }
+  
+  #img05 {
+    background-image: url("https://planetadelibrosco4.cdnstatics.com/usuaris/libros/fotos/284/tam_1/portada_sin-remedio_antonio-caballero_201810030048.jpg");
+  }
+  
+  #img06 {
+    background-image: url("https://planetadelibrosco4.cdnstatics.com/usuaris/libros/fotos/284/tam_1/283481_portada_brujas-literarias_taisia-kitaiskaia_201807170255.jpg");
+  }
+  #img07 {
+    background-image: url("https://planetadelibrosco4.cdnstatics.com/usuaris/libros/fotos/284/tam_1/portada_las-fiebres-de-la-memoria_gioconda-belli_201810050034.jpg");
+  }
+  #img08 {
+    background-image: url("https://planetadelibrosco4.cdnstatics.com/usuaris/libros/fotos/284/tam_1/portada_es-mejor-no-preguntar_sergio-ocampo-madrid_201810050032.jpg");
+  }
+
+  /* --- Estrellas para Rating -- */
+  .ec-stars-wrapper {
+	  font-size: 0;
+	  display: inline-block;
+  }
+
+  .ec-stars-wrapper a {
+    
+    text-decoration: none;
+	  display: inline-block;
+	/* Volver a dar tamaño al texto */
+	  font-size: 32px;
+	  font-size: 2rem;
+	
+	  color: #888;
+}
+
+  .ec-stars-wrapper:hover a {
+	  color: rgb(39, 130, 228);
+  }
+
+  .ec-stars-wrapper > a:hover ~ a {
+	  color: #888;
+  }
+
+
+  </style>
+<div class="contenedor"> 
+<body>
+
+  <header>
+    <div class="logo"> 
+      <img src="/imagenes/jobsity-logo.png" width="210" alt="Logo Jobsity"> 
+    </div>
+    <div  class="titulo">
+      <a href="#">Bookshelf</a>
+    </div>
+    <div class="inputIcon">
+        <input type="text" id="search" placeholder="Search..." />
+        <i class="icon-search" aria-hidden="true"></i>
+    </div>
+    <div class="autor">
+      <select id="dropdown" name="autores" class="dropdown">
+        <option disabled opcion>Seleccione una opcion</option>
+        <option value="">Jacob Treml</option>
+        <option value="">Fulano de tal 1</option>
+        <option value="">Fulano de tal 2</option>
+        <option value="">Fulano de tal 3</option>
+        <option value="">Fulano de tal 4</option>
+        <option value="">Fulano de tal 5</option>
+      </select>
+    </div>
+    <div  class="img-2">
+      <img src="/imagenes/foto-autor.jpeg" width="150" alt="">
+    </div>
+  </header>
+  <div class="container-main">
+    <aside class="main-menu">
+      <div>
+        <br>
+        <p>MAIN</p>
+        <ul class="menu-1">
+          <li><a href="" class="icon-network">Quito</a></li>
+          <li><a href=""  class="icon-network">Cartagena</a></li>
+          <li><a href=""  class="icon-network">Medellín</a></li>
+          <li><a href=""  class="icon-torso">Personal Loans</a></li>				
+          <li><a href=""  class="icon-tags">New Releases</a></li>
+        </ul>
+      </div>
+      <div>
+        <br>
+        <p>YOUR BOOKS</p>
+        <ul class="menu-1">
+          <li><a href=""  class="icon-book">Readings</a></li>
+          <li><a href=""  class="icon-clock">History</a></li>
+          <li><a href=""  class="icon-bookmark">Read Later</a></li>
+          <li><a href=""  class="icon-heart">Favorites</a></li>
+        </ul>
+      </div>
+    </aside>
+    <section class="list-book">
+
+      <div class="item-container" id="book01">
+        <div class="book-img" id="img01"></div>
+        <div class="titulos" >Las noches todas <br>
+        Tomás González 
+        <div class="ec-stars-wrapper">
+            <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+            <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+            <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+            <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+            <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+        </div>
+        </div>
+    </div>
+      <div class="item-container" id="book02">
+        <div class="book-img" id="img02"></div>
+        <div class="titulos" >Todo por la patria <br>
+          Martin Caparrós
+          <div class="ec-stars-wrapper">
+              <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+              <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+              <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+              <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+              <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+          </div>
+          </div>
+      </div>
+      <div class="item-container" id="book03">
+        <div class="book-img" id="img03"></div>
+        <div class="titulos" >Volver a comer del arbol la ciencia <br>
+          Tomás González 
+          <div class="ec-stars-wrapper">
+              <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+              <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+              <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+              <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+              <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+          </div>
+          </div>
+      </div>
+      <div class="item-container" id="book04">
+        <div class="book-img" id="img04"></div>
+        <div class="titulos" >La muerte del comendador <br>
+          Haruki Muraki
+          <div class="ec-stars-wrapper">
+              <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+              <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+              <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+              <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+              <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+          </div>
+          </div>
+      </div>
+      <div class="item-container" id="book05">
+        <div class="book-img" id="img05"></div>
+        <div class="titulos" >Sin Remedio <br>
+          Antonio Caballero 
+          <div class="ec-stars-wrapper">
+              <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+              <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+              <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+              <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+              <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+          </div>
+          </div>       
+      </div>
+      <div class="item-container" id="book06">
+          <div class="book-img" id="img06"></div>
+          <div class="titulos" >Brujas Literarias <br>
+            Taisia Kitaiskaia
+            <div class="ec-stars-wrapper">
+                <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+            </div>
+            </div>       
+      </div>
+      <div class="item-container" id="book07">
+          <div class="book-img" id="img07"></div>
+          <div class="titulos" >Las fiebres de la memoria <br>
+            Gioconda Belli
+            <div class="ec-stars-wrapper">
+                <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+            </div>
+            </div>       
+      </div>
+      <div class="item-container" id="book08">
+          <div class="book-img" id="img08"></div> 
+          <div class="titulos" >Es mejor no preguntar <br>
+            Sergio Ocampo Madrid
+            <div class="ec-stars-wrapper">
+                <a href="#" data-value="1" title="Votar con 1 estrellas">&#9733;</a>
+                <a href="#" data-value="2" title="Votar con 2 estrellas">&#9733;</a>
+                <a href="#" data-value="3" title="Votar con 3 estrellas">&#9733;</a>
+                <a href="#" data-value="4" title="Votar con 4 estrellas">&#9733;</a>
+                <a href="#" data-value="5" title="Votar con 5 estrellas">&#9733;</a>
+            </div>
+            </div>      
+      </div>
+    </section>
+    <aside class="estadisticas">
+      <div>
+        <p>MOST READ BOOKS</p>
+        <br>
+        <ol class="menu-1">
+          <li>Hooked: How to build Habit-...</li>
+          <li>The Inevitable: Underestanding...</li>
+          <li>Lean In: Women, Work, and T..</li>
+          <li>Building a Business The...</li>
+          <li>How Google Works></li>
+        </ol>
+      </div>
+      
+    </aside>
+  </div>
+</body>
+</div>
+</html>
